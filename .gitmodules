@@ -1,3 +1,9 @@
 [submodule "_ttio_templates/site-manager"]
 	path = _ttio_templates/site-manager
 	url = https://github.com/TravelTripperWeb/_ttio_templates-site-manager.git
+[submodule "_ttio_templates/no-bedrock-cp"]
+	path = _ttio_templates/no-bedrock-cp
+	url = https://github.com/TravelTripperWeb/_ttio_templates-no-bedrock-cp.git
+[submodule "_plugins-38"]
+	path = _plugins-38
+	url = https://github.com/TravelTripperWeb/cms-jekyll-3-8-plugins.git
