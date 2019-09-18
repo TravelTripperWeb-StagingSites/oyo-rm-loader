@@ -3,13 +3,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="/loader.js"></script>
 </head>
 <body>
-  Hi.
-  <div data-replace="BookingWidget"></div>
+  {% if site.url %}
+    <script type="text/javascript">
+      var url = "{{site.url}}"
+      {% if jekyll.environment != "production" %}
+        url = url + "?draft-url=" + window.location.href.replace(/https?:\/\//,'').replace(/\/$/,'');
+      {% endif %}
+      window.location = url;
+    </script>
+  {% endif %}
   
-  <div data-replace="ConversionPlusBanner"></div>
+  
+  <div data-conversion-plus-placeholder="BookingWidgetButton"></div>
+  
+  <div data-conversion-plus-placeholder="BookingWidget"></div>
+  
+  <div data-conversion-plus-placeholder="ConversionPlusBanner"></div>
   
 </body>
 </html>
